@@ -1,31 +1,24 @@
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+.container {
+    width: 100%;
+    max-width: 1140px;
 }
 
 @media screen and (max-width: 576px) {
-    .lessons .row,
-    .steps .row,
-    .why-us .row {
+    .row {
         flex-direction: column;
-        align-items: center;
         gap: 50px;
     }
 
-    .lessons .col,
-    .steps .col,
-    .why-us .col {
+    .row .col {
         width: 100%;
     }
 
-    .steps {
+    section:not(:first-child) {
         margin-bottom: 0;
     }
 
     .why-us {
         background-color: #222;
-        margin: 0;
         padding: 3em 0;
     }
 }
